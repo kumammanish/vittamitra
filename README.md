@@ -31,8 +31,8 @@
 ```bash
 cd backend
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+pip install -r requirements.txt        # see [backend/requirements.txt](backend/requirements.txt)
+uvicorn main:app --reload --port 8000  # entrypoint is [backend/main.py](backend/main.py)
 ```
 
 ### 2. Frontend (new terminal)
@@ -49,7 +49,7 @@ Open **http://localhost:5173**
 
 ## Using Sample Data
 
-Upload `backend/data/sample_bank_statement.csv` from the **Documents** tab.  
+Upload [`backend/data/sample_bank_statement.csv`](backend/data/sample_bank_statement.csv) from the **Documents** tab.  
 It contains 6 months of realistic transactions for a ₹14.4L/year salaried professional.
 
 ---
@@ -102,17 +102,18 @@ Configure in the Settings panel. Chat works without a key (rule-based mode).
 
 ## Running Tests
 
+*Note: the original `tests/` directory has been removed; add tests under `backend/` if needed.*
+
 ```bash
 cd backend && source .venv/bin/activate
-pip install pytest
-python -m pytest ../tests/test_tax_engine.py -v
+# install pytest and run whatever tests you create under backend/
 ```
 
 ---
 
 ## Updating Tax Rules
 
-All slabs and limits are in `backend/config/tax_rules.json`.  
+All slabs and limits are in [`backend/config/tax_rules.json`](backend/config/tax_rules.json).  
 Edit this file for any new financial year — no code changes needed.
 
 ---
@@ -121,8 +122,8 @@ Edit this file for any new financial year — no code changes needed.
 
 | File | Purpose |
 |---|---|
-| [`IMPLEMENTATION.md`](./IMPLEMENTATION.md) | Full deployment & architecture guide |
-| [`agents.md`](./agents.md) | AI agent prompt to regenerate this project |
+| [`IMPLEMENTATION.md`](IMPLEMENTATION.md) | Full deployment & architecture guide |
+| [`agents.md`](agents.md) | AI agent prompt to regenerate this project |
 
 ---
 
