@@ -1,0 +1,248 @@
+{
+    "fy": "2024-25",
+    "standard_deduction": 50000,
+    "standard_deduction_new_regime": 75000,
+    "cess_rate": 0.04,
+    "regimes": {
+        "old": {
+            "name": "Old Regime",
+            "slabs": [
+                {
+                    "min": 0,
+                    "max": 250000,
+                    "rate": 0.00
+                },
+                {
+                    "min": 250000,
+                    "max": 500000,
+                    "rate": 0.05
+                },
+                {
+                    "min": 500000,
+                    "max": 1000000,
+                    "rate": 0.20
+                },
+                {
+                    "min": 1000000,
+                    "max": null,
+                    "rate": 0.30
+                }
+            ],
+            "rebate_87a": {
+                "income_limit": 500000,
+                "rebate_amount": 12500
+            }
+        },
+        "new": {
+            "name": "New Regime (FY 2024-25)",
+            "slabs": [
+                {
+                    "min": 0,
+                    "max": 300000,
+                    "rate": 0.00
+                },
+                {
+                    "min": 300000,
+                    "max": 600000,
+                    "rate": 0.05
+                },
+                {
+                    "min": 600000,
+                    "max": 900000,
+                    "rate": 0.10
+                },
+                {
+                    "min": 900000,
+                    "max": 1200000,
+                    "rate": 0.15
+                },
+                {
+                    "min": 1200000,
+                    "max": 1500000,
+                    "rate": 0.20
+                },
+                {
+                    "min": 1500000,
+                    "max": null,
+                    "rate": 0.30
+                }
+            ],
+            "rebate_87a": {
+                "income_limit": 700000,
+                "rebate_amount": 25000
+            }
+        }
+    },
+    "surcharge": [
+        {
+            "min": 0,
+            "max": 5000000,
+            "rate": 0.00
+        },
+        {
+            "min": 5000000,
+            "max": 10000000,
+            "rate": 0.10
+        },
+        {
+            "min": 10000000,
+            "max": 20000000,
+            "rate": 0.15
+        },
+        {
+            "min": 20000000,
+            "max": 50000000,
+            "rate": 0.25
+        },
+        {
+            "min": 50000000,
+            "max": null,
+            "rate": 0.37
+        }
+    ],
+    "deductions": {
+        "80C": {
+            "limit": 150000,
+            "label": "Sec 80C (PPF/ELSS/LIC/PF/Tuition)",
+            "regime": "old_only"
+        },
+        "80CCD1B": {
+            "limit": 50000,
+            "label": "Sec 80CCD(1B) – NPS extra",
+            "regime": "old_only"
+        },
+        "80D": {
+            "label": "Sec 80D – Health Insurance",
+            "regime": "old_only",
+            "self_family": {
+                "below_60": 25000,
+                "above_60": 50000
+            },
+            "parents": {
+                "below_60": 25000,
+                "above_60": 50000
+            }
+        },
+        "HRA": {
+            "label": "HRA Exemption",
+            "regime": "old_only",
+            "metro_cities": [
+                "Mumbai",
+                "Delhi",
+                "Kolkata",
+                "Chennai"
+            ]
+        },
+        "home_loan_interest": {
+            "limit": 200000,
+            "label": "Home Loan Interest (Sec 24b)",
+            "regime": "old_only"
+        },
+        "LTA": {
+            "label": "Leave Travel Allowance",
+            "regime": "old_only"
+        }
+    },
+    "transaction_tags": {
+        "salary": [
+            "salary",
+            "sal credit",
+            "ctc",
+            "monthly pay",
+            "neft from employer"
+        ],
+        "rent": [
+            "rent",
+            "house rent",
+            "pg rent",
+            "accommodation"
+        ],
+        "emi": [
+            "emi",
+            "loan repayment",
+            "home loan",
+            "car loan",
+            "bike loan",
+            "personal loan"
+        ],
+        "insurance": [
+            "lic",
+            "insurance",
+            "premium",
+            "sbi life",
+            "hdfc life",
+            "max life",
+            "term plan"
+        ],
+        "investment": [
+            "ppf",
+            "elss",
+            "sip",
+            "mutual fund",
+            "nps",
+            "fd",
+            "fixed deposit",
+            "rd",
+            "recurring"
+        ],
+        "utilities": [
+            "electricity",
+            "water",
+            "gas",
+            "broadband",
+            "internet",
+            "mobile recharge",
+            "phone bill"
+        ],
+        "food": [
+            "swiggy",
+            "zomato",
+            "restaurant",
+            "cafe",
+            "hotel",
+            "dining"
+        ],
+        "travel": [
+            "irctc",
+            "flight",
+            "makemytrip",
+            "goibibo",
+            "uber",
+            "ola",
+            "rapido",
+            "metro"
+        ],
+        "shopping": [
+            "amazon",
+            "flipkart",
+            "myntra",
+            "ajio",
+            "nykaa",
+            "reliance",
+            "bigbazaar"
+        ],
+        "transfer": [
+            "neft",
+            "imps",
+            "upi",
+            "transfer to",
+            "self transfer"
+        ],
+        "medical": [
+            "pharmacy",
+            "hospital",
+            "clinic",
+            "apollo",
+            "medplus",
+            "1mg",
+            "netmeds"
+        ],
+        "tax": [
+            "tds",
+            "advance tax",
+            "self assessment",
+            "income tax",
+            "challan"
+        ]
+    }
+}

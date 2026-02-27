@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# VSCode
+.vscode/
+.history/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+/dist/
+/.vite
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# dotenv
+.env
+
+# build
+build/
+
+# coverage
+htmlcov/
+.coverage
+
+# IDEs
+.idea/
+
+# Frontend
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# python virtual envs
+.venv/
+
+# compiled files
+*.pyc
+
+# local config
+backend/.venv/
+frontend/node_modules/
+
+# other
+*.bak
+

@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/settingspanel.tsx","./src/hooks/useappstate.ts","./src/pages/chatpage.tsx","./src/pages/dashboard.tsx","./src/pages/deductionspage.tsx","./src/pages/itrsummarypage.tsx","./src/pages/regimecomparepage.tsx","./src/pages/taxfilingpage.tsx","./src/pages/uploadpage.tsx","./src/services/api.ts"],"version":"5.9.3"}
